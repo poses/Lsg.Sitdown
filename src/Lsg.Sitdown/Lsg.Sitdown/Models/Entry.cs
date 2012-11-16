@@ -12,6 +12,6 @@ namespace Lsg.Sitdown.Models
         public string Yesterday { get; set; }
         public string Today { get; set; }
         public string Obstacles { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }
-
