@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Lsg.Sitdown.Models
 {
-    public class Entry
+    public class DailyEntry
     {
         public int Id;
         public string Username { get; set; }
