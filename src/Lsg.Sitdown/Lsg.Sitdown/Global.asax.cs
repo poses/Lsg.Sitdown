@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -16,6 +17,9 @@ namespace Lsg.Sitdown
     {
         protected void Application_Start()
         {
+            //var dbInitSettings = new DropCreateDatabaseIfModelChanges<SitdownContext>();
+            Database.SetInitializer<SitdownContext>(null);
+            
             AreaRegistration.RegisterAllAreas();
 
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

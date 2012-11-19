@@ -1,0 +1,35 @@
+
+
+body {
+  background-color: rgb(70,70,70);
+  color: #011;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 10pt;
+  /* margin: 0 auto; */
+  margin: 0;
+}
+
+#username {
+  color: #fff;
+  text-align: right;
+  padding: 2px 4px;
+}
+
+#login {
+  background-color: rgb(57,99,157);
+  padding: 2px;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#content {
+  background-color: #fff; /* rgb(222,245,250); */
+  padding: 4px 4px;
+  border-radius: 0 0 5px 5px;
+}
+a {
+  color: rgb(255,129,25);
+}

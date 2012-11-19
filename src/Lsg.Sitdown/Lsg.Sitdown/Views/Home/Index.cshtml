@@ -38,3 +38,16 @@
         and price for your applications. <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn
             more</a></li>
 </ol>
+<script type="text/javascript">
+    var paramObj = { };
+    paramObj.limit = 20;
+    $.ajax({
+        url: '/api/DailyEntry',
+        method: 'GET',
+        params: paramObj,
+        success: function (data) {
+            alert(data[0].CreatedDate);
+        }
+    });
+//$('#dailyEntryList').append('<li></li>').
+</script>

@@ -18,7 +18,14 @@ namespace Lsg.Sitdown.Controllers
         // GET api/DailyEntry
         public IEnumerable<DailyEntry> GetDailyEntries()
         {
-            return _db.DailyEntries.AsEnumerable();
+            var entries = _db.DailyEntries.AsEnumerable();
+            return entries;
+        }
+
+        // GET api/DailyEntry?limit=10
+        public IEnumerable<DailyEntry> GetDailyEntries(int limit)
+        {
+            return _db.DailyEntries.Take(limit);
         }
 
         // GET api/DailyEntry/5

@@ -10,7 +10,8 @@ namespace Lsg.Sitdown.Models
     {
         [Key]
         public int Id { get; set; }
-        //public string Username { get; set; }
+        [StringLength(50)]
+        public string Username { get; set; }
         [StringLength(2000)] 
         public string Yesterday { get; set; }
         [StringLength(2000)] 
@@ -18,5 +19,6 @@ namespace Lsg.Sitdown.Models
         [StringLength(2000)] 
         public string Obstacles { get; set; }
         public DateTime CreatedDate { get; set; }
+        //public bool IsCriticalSupportWork { get; set; }
     }
 }
